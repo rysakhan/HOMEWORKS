@@ -22,7 +22,7 @@ namespace Sales_Total
 
             double subTotal = itemPrice * itemQuantity;
             double taxTotal = subTotal * TAXRATE;
-            double total = taxTotal + subTotal;
+            double total = taxTotal + subTotal; 
 
             Console.WriteLine("Your subtotal for your bill is " + subTotal.ToString("C2") + ".");
             Console.WriteLine("Your sales tax for your bill is " + taxTotal.ToString("C2") + ".");
