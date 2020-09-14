@@ -11,14 +11,14 @@ namespace Sales_Total
             //string itemQuantity;
             //string itemPrice;
 
-            Console.WriteLine("What is the name of the item you bought?");
+            Console.WriteLine("What is the product name of the item you are purchasing?");
             string itemName = Console.ReadLine();
+
+            Console.WriteLine("How many " + itemName + "'s do you want buy?");
+            int itemQuantity = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("What is the price of each " + itemName + "?");
             double itemPrice = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("How many " + itemName + " did you buy?");
-            int itemQuantity = Convert.ToInt32(Console.ReadLine());
 
             double subTotal = itemPrice * itemQuantity;
             double taxTotal = subTotal * TAXRATE;
